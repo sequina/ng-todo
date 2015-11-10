@@ -5,8 +5,14 @@
     <link rel="stylesheet" type="text/css" href="./main.css">
     <!-- <link rel="stylesheet" type="text/css" href="lib/bower_components/bootstrap/dist/css/bootstrap.min.css"> -->
 </head>
-<body ng-app = "TodoApp">
-<section ng-controller = "TodoController"></section>
+  <body ng-app = "TodoApp">
+      <section ng-controller = "PastaCtrl"></section>
+      <section ng-controller = "TodoController"></section>
+        <h1> {{pasta}} </h1>
+          <div>
+            <input type="text" ng-model="foods" />
+            <div>{{foods}}</div>
+          </div>
   <script type="text/javascript" src = "lib/bower_components/angular/angular.min.js"></script>
 <script data-main="javascripts/main" src="./main.js"></script>
 </body>
